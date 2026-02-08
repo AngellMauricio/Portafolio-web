@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css">
+
+</head>
+
+<body>
+    <h1>Alta de nuevos productos</h1>
+
+    <div class="form-group">
+        <label>Nombre del producto:</label>
+        <input type="text" id="titulo" placeholder="Nombre del producto">
+    </div>
+    <div class="form-group">
+        <label>Precio:</label>
+        <input type="number" id="precio" placeholder="$">
+    </div>
+    <div class="form-group">
+        <label>Categoria:</label>
+        <select id="category-select">
+            <option value="">Seleccione una categorías</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Descripcion:</label>
+        <textarea id="descripcion" rows="4" placeholder="Descripcion del producto"></textarea>
+    </div>
+    <button class="btn-regresar" onclick="window.location.href='index.html'"> <-comeback </button>
+            <button class="btn-regresar" onclick="agregarProducto()">Agregar Producto</button>
+            <div id="mensaje-exito"></div>
+
+
+
+            <script src="add.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+/* css/estilos.css */
+
+/* Personalización del efecto Hover en las tarjetas */
+.custom-hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* Quitamos el borde por defecto de Bootstrap para que se vea más limpio */
+    cursor: pointer;
+}
+
+.custom-hover-card:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important; /* Aumenta la sombra */
+}
+
+/* Ajustes opcionales para los Badges (etiquetas) */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.5em 0.8em;
+}
+
+/* Ajuste para el texto del header */
+header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Si usas imágenes reales más tarde, esto asegura que llenen el espacio */
+.card-img-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

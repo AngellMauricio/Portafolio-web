@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMaster | Panel de Administración</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <h2>ShopMaster</h2>
+
+            <div class="filter-group">
+                <label for="category-select">Categoría</label>
+                <select id="category-select">
+                    <option value="">Seleccione una categorías</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="sort-select">Ordenar por</label>
+                <select id="sort-select">
+                    <option value="">Defecto</option>
+                    <option value="title-asc">Título (A-Z)</option>
+                    <option value="title-desc">Título (Z-A)</option>
+                    <option value="price-asc">Precio (Menor a Mayor)</option>
+                    <option value="price-desc">Precio (Mayor a Menor)</option>
+                </select>
+            </div>
+        </aside>
+
+        <header class="top-bar">
+            <form id="search-form" class="search-box">
+                <input type="text" id="search-input" placeholder="Buscar productos (ej. Phone)...">
+                <button type="submit"  class="btn btn-primary" id="search-btn" >Buscar</button>
+            </form>
+                        
+            <button class="btn btn-primary" onclick="window.location.href='Agregar.html'">
+                + Nuevo Producto
+            </button>
+        </header>
+
+        <main class="main-content">
+            <div class="table-container">
+                <table id="products-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Foto</th>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <button class="btn btn-primary" id="prev-btn"> Anterior </button>
+                <span class="page-info" id="page-display"></span>
+                <button class="btn btn-primary" id="next-btn"> Siguiente </button>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
