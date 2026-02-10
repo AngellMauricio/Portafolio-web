@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Dinámico - GitHub API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .repo-card { transition: transform 0.2s; height: 100%; }
+        .repo-card:hover { transform: translateY(-5px); }
+        .follower-img { width: 50px; height: 50px; border-radius: 50%; margin: 5px; }
+        footer { background-color: #212529; color: white; padding: 2rem 0; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark text-white py-5 mb-4">
+        <div class="container text-center">
+            <div id="perfil-container">
+              
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2 class="mb-4">Mejores Proyectos <small class="text-muted fs-6">(Actualizados recientemente)</small></h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4" id="repos-container">
+                    <div class="col">
+                        <div class="card repo-card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Nombre del Proyecto</h5>
+                                <p class="card-text text-muted small">Descripción del repositorio obtenida de la API.</p>
+                                <a href="#" class="btn btn-sm btn-outline-dark">Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="col-lg-3">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title h5 mb-3">Comunidad</h4>
+                        <p class="text-muted small">Seguidores destacados:</p>
+                        <div id="followers-container" class="d-flex flex-wrap justify-content-start">
+                            </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>Portafolio Generado mediante la API de GitHub</p>
+            <p class="small text-muted">© 2026 - Tu Nombre</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
